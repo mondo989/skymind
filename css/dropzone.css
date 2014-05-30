@@ -185,7 +185,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
-  width: 428px;
+
   height: 123px;
   margin-left: -214px;
   margin-top: -61.5px;
@@ -406,3 +406,11 @@
   to {
     background-position: -7px -400px;
   }
+}
+
+@media (max-width: 651px) {
+.dropzone {
+    min-height: 280px;
+  }
+
+}

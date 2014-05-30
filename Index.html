@@ -13,7 +13,6 @@
    <meta charset="UTF-8">
   
 
-
 </head>
 
    <body>
@@ -40,19 +39,17 @@
 </div>
 
 
-
-  <div id="dropzone" class="bottom">
-      <form action="http://www.yahoo.com/dropzone.php" class="dropzone" id="demo-upload">
-      </form>
-      <a href="#"  id="uploadb" class="anbutton center-button">Upload Photo</a>
-
-
-     
-  </div>
-
-    <div class="up-pic">
-        <img class="img-responsive" src="img/spritemap@2x.png" alt="">
-    </div>
+<div id="whole-uploader">
+        <div id="dropzone" class="bottom">
+            <form action="http://www.yahoo.com/dropzone.php" class="dropzone" id="demo-upload">
+            </form>
+            <a href="#"  id="uploadb" class="anbutton center-button">Upload Photo</a>
+          
+        </div>
+        <div class="up-pic">
+            <img class="img-responsive" src="img/spritemap@2x.png" alt="">
+        </div>
+</div>
 
     
 
@@ -131,7 +128,7 @@
 <div class="space"></div>
 <div class="space"></div>
 
-<body onload="myFunction()">
+
 
 <!-- Scripts for all -->
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -146,14 +143,8 @@
    <script src="./js/dropzone.js"></script>
   
     <script src="./js/random.js"></script>
-   
+    <body onload="myFunction()"> 
 
-<script>
-function myFunction()
-{
-document.getElementById("cats").style.display = "none";
-}
-</script>
 
 
 

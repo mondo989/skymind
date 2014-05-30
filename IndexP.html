@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>SkyMind</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Armando.sx Web Designer">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<!--
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  -->
+
+
+
+  <script>
+  $(function() {
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+      var selectedEffect = $( "#effectTypes" ).val();
+ 
+      // most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 0 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+ 
+      // run the effect
+      $( "#effect" ).toggle( selectedEffect, options, 500 );
+    };
+ 
+    // set effect from select menu value
+    $( "#button" ).click(function() {
+      runEffect();
+      return false;
+    });
+  });
+  </script>
+
+
+<style>
+  .toggler {
+    width: 500px;
+    height: 200px;
+  }
+  #button {
+    padding: .5em 1em;
+    text-decoration: none;
+  }
+  #effect {
+    position: relative;
+    width: 240px;
+    height: 135px;
+    padding: 0.4em;
+  }
+  #effect h3 {
+    margin: 0;
+    padding: 0.4em;
+    text-align: center;
+  }
+  </style>
+
+</head>
+
+
+
+
+ 
+
+<body>
+ 
+<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 class="ui-widget-header ui-corner-all">Toggle</h3>
+    <p>
+      Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+    </p>
+  </div>
+</div>
+ 
+<select name="effects" id="effectTypes">
+  <option value="blind">Blind</option>
+  <option value="bounce">Bounce</option>
+  <option value="clip">Clip</option>
+  <option value="drop">Drop</option>
+  <option value="explode">Explode</option>
+  <option value="fold">Fold</option>
+  <option value="highlight">Highlight</option>
+  <option value="puff">Puff</option>
+  <option value="pulsate">Pulsate</option>
+  <option value="scale">Scale</option>
+  <option value="shake">Shake</option>
+  <option value="size">Size</option>
+  <option value="slide">Slide</option>
+</select>
+ 
+<a href="#" id="button" class="ui-state-default ui-corner-all">Run Effect</a>
+ 
+ 
+
+
+
+
+
+
+
+     <div class="ycontainer">
+               <div class="main-font" id="main-size">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, necessitatibus, numquam, vitae in minus ducimus natus explicabo nesciunt expedita aperiam quidem iure impedit deserunt dolorem animi magnam consequuntur! Maxime, sunt.
+               </div>
+         </div>
+
+
+                <div class="center-button">  
+                       <p>
+                           <!-- Button from anchor tag -->
+                           <a href="#"  id="uploadb" class="anbutton">Upload Photo</a>
+                       </p>
+                </div>
+
+                  <!--   Button Sample from my baby Mary Lou / Codrops
+                           <a href="#" class="a_demo_four">
+                                 Upload Photo
+                           </a>
+                  -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+
+ <script src="js/bootstrap.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   
+   <script src="js/jquery.fittext.js"></script>
+
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+  
+<!-- Fit Text js -->
+  <script type="text/javascript">
+      $("#main-size").fitText(1.3, { minFontSize: '8px', maxFontSize: '40px' });
+      $("#uploadb").fitText(1.1, { minFontSize: '15px', maxFontSize: '60px' });
+  </script>
+
+
+   </body>
+</html>

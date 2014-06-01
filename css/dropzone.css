@@ -41,7 +41,7 @@
 /* AFFECTS THE SURROUNDING BOX but not image inside */
 
 .dropzone .dz-preview,
-.dropzone-previews .dz-preview {
+.dropzone-previews .dz-preview #my-drop-area {
   background: rgba(255,255,255,0.8);
   position: absolute;
   display: inline-block;
@@ -66,7 +66,7 @@
 
 /* AFFECTS THE IMAGE INSIDE ;) */
 .dropzone .dz-preview .dz-details,
-.dropzone-previews .dz-preview .dz-details {
+.dropzone-previews .dz-preview .dz-details  #my-drop-area{
   width: 100%;
   height: 100%;
   position: relative;
@@ -171,7 +171,7 @@
 }
 .dropzone {
   border: 1px solid rgba(0,0,0,0.1);
-  height: 540px;
+  height: 480px;
   -webkit-border-radius: 3px;
   border-radius: 10px;
   background: rgba(0,0,0,0.03);
@@ -413,6 +413,31 @@
   }
 }
 
+#dropzone.bottom:hover {
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);  
+
+       -webkit-transition:  1s ease;
+  -moz-transition: 1s ease;
+  -o-transition: 1s ease;
+  -ms-transition:  1s ease;
+  transition:  1s ease;
+}
+
+
+#whole-uploader {
+    -webkit-transition:  1s ease;
+  -moz-transition: 1s ease;
+  -o-transition: 1s ease;
+  -ms-transition:  1s ease;
+  transition:  1s ease;
+  
+    
+
+
+}
+
 
 
 
@@ -484,7 +509,12 @@
 @media (max-width: 768px) {
     
     #whole-uploader .dropzone{
-      width: 70%;
-      margin: 0 auto;
+     width: 90%;
+    margin: 0px auto;
+    max-width: 450px;
     }
+  
+   
+
+
 }

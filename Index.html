@@ -17,7 +17,7 @@
 
    <body>
 
-<div class="container">
+<div class="container" >
 
     <header class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
@@ -32,39 +32,57 @@
 
 <div class="row ">
      <div class="ycontainer">
-               <div class="main-font" id="main-size">
+               <div class="main-font" id="font-a">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, necessitatibus, numquam, vitae in 
                </div>
          </div>
 </div>
 
+<br><br>
 
-<div id="whole-uploader">
-        <div id="dropzone" class="bottom">
-            <form action="http://www.yahoo.com/dropzone.php" class="dropzone" id="demo-upload">
-            </form>
-            <a href="#"  id="uploadb" class="anbutton center-button">Upload Photo</a>
-          
-        </div>
-        <div class="up-pic">
-            <img class="img-responsive" src="img/spritemap@2x.png" alt="">
-        </div>
+
+<div class="row">
+       
+          <div class="col-sm-6">
+              <div id="whole-uploader">
+                  <div id="dropzone" class="bottom">
+                      <form action="#" class="dropzone" id="demo-upload"> 
+                           
+                     
+                     <div class="ml-int">This is where the machine learning <br> will take place after you upload photo.</div>
+
+<a href="#"  class="anbutton center-button" id="dropzone" >Click to <br>Upload Photo</a>
+
+                      </form>       
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+                  <div class="blankdiv">
+                        <p class="ml-p">This is where the machine learning <br> will take place after you upload photo.</p>
+                       <!--     <div class="dowork">  </div> -->
+                            
+                  </div>
+          </div>
 </div>
 
+
+   
+ <div class="up-pic">
+  <div id="up-pic"></div>
+            <img class="img-responsive" src="img/spritemap.png" alt="">
+  </div>
+
+
+
+
+
+<!-- Activator button to start the comparison. -->
     
 
-<!-- Activator button to start the comparison. -->
-    <div class="row">
-              <div class="activator">
-                    <a href="#"  id="push-activate" class="anbutton"><p class="activate">Start Analysis</p></a>
-              </div>
-    </div>
-
 <br>
-
-
-
-
+<hr>
 
 
 
@@ -72,44 +90,45 @@
         <!-- Cue in the Some Content and Cat Photos -->
         <div class="row space">
                       <div class="col-xs-12">
-                          <h1 class="text-center">These words will introduce the next part</h1>
+                          <h1 class="text-center"  id="font-b">These words will introduce the next part</h1>
                       </div>
 
         </div>
         <br>
         <div class="row space">
-                <div class="col-sm-8">
-                    <h3 class="text-right media-center">Artificial Intelligence Breakthrough, Google Computers Teach Themselves To Spot Cats on YouTube</h3>
+                <div class="col-md-4 col-sm-4 col-sm-push-8 ">
+                    <img class="img-responsive meow" src="img/catai.jpg" alt="" >
+                </div>
+
+                <div class="col-md-8 col-sm-8 col-sm-pull-4 ">
+                    <h3 class="text-right media-center"  id= "font-d">Artificial Intelligence Breakthrough, Google Computers Teach Themselves To Spot Cats on YouTube</h3>
                           <ul class="mixed-con">
                                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, beatae, iure, aliquid deserunt voluptates omnis o</li>
                                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, illum, accusamus quibusdam.</li>
                                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, hic, accusamus, cupiditate totam repellat es!</li>
                           </ul>
               </div>
-              <div class="col-sm-4">
-                  <img class="img-responsive meow" src="img/catai.jpg" alt="" >
-              </div>
+             
         </div>
 </div>
 
-<br>
-
-<br>
-
+ 
+ 
 <div id="writings">
 
               <div class="row space">
                   <div class="col-md-12">
-                      <h1 class="text-center">These words will introduce the next part</h1>
+                      <h1 class="text-center"  id="font-c">These words will introduce the next part</h1>
                   </div>
               </div>
         <br>
         <div class="row ">
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-4">
                 <img class="img-responsive meow" src="img/writing.png" alt="" >
             </div>
-            <div class="col-sm-8">
-                <h3 class="media-center">Artificial Intelligence Breakthrough, Google Computers Teach Themselves To Spot Cats on YouTube</h3>
+            
+            <div class="col-md-8 col-sm-8">
+                <h3 class="media-center" id= "font-e">Artificial Intelligence Breakthrough, Google Computers Teach Themselves To Spot Cats on YouTube</h3>
                     <ul class="mixed-con">
                               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, beatae, iure, aliquid deserunt voluptates omnis o</li>
                               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, illum, accusamus quibusdam.</li>
@@ -137,13 +156,16 @@
   
 <!-- Fit Text js -->
   <script type="text/javascript">
-      $("#main-size").fitText(1.3, { minFontSize: '8px', maxFontSize: '52px' });
-      $("#uploadb").fitText(1.1, { minFontSize: '15px', maxFontSize: '60px' });
+      $("#font-a").fitText(1.3, { minFontSize: '25px', maxFontSize: '47px' });
+       $("#font-b").fitText(1.3, { minFontSize: '18px', maxFontSize: '38px' });
+        $("#font-c").fitText(1.3, { minFontSize: '18px', maxFontSize: '38px' });
+         $("#font-d").fitText(1.3, { minFontSize: '18px', maxFontSize: '32px' });
+          $("#font-e").fitText(1.3, { minFontSize: '18px', maxFontSize: '32px' });
   </script>
    <script src="./js/dropzone.js"></script>
   
     <script src="./js/random.js"></script>
-    <body onload="myFunction()"> 
+
 
 
 

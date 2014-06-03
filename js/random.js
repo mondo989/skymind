@@ -80,7 +80,6 @@ uppic.onclick = function() {
 
 
 
-
   //       function blankBox() {
      //        var  uppic = document.getElementById("uppic");
                   

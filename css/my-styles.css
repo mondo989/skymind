@@ -29,7 +29,7 @@ line-height: 42px;
 
 .blankdiv {
   width: 100%;
-  height: 480px;
+  height: 450px;
   border: 1px solid rgba(0,0,0,0.1);
   -webkit-border-radius: 3px;
   border-radius: 10px;
@@ -152,12 +152,12 @@ line-height: 42px;
 
  
 a.anbutton{
-      background: #ECECEC;
+      background: #fff;
       border-radius: 10px;
       padding: 10px 20px;
       display: block;
 
-      font-weight: bold;
+      font-weight: 300;
       color:#000;
       text-decoration: none;
       text-shadow:0 1px 0 #fff;
@@ -169,7 +169,7 @@ a.anbutton{
       min-width: 180px;
       height: auto;
       margin: 0 auto;
-      margin-bottom: 8%;
+      margin-bottom: 12%;
       line-height: 25px;
       font-size: 20px;
       box-shadow: 0 -.2px 4px white, 1px 2px 2px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1);
@@ -210,7 +210,7 @@ p.activate {
   position: absolute;
   right: 0;
   left: 0;
-  top: 45%;
+  top: 47%;
   bottom: 0;
 }
 
@@ -221,7 +221,7 @@ p.activate {
   position: absolute;
   right: 0;
   left: 0;
-  top: 45%;
+  top: 47%;
   bottom: 0;
 }
 
@@ -233,7 +233,7 @@ p.activate {
   position: absolute;
   right: 0;
   left: 0;
-  top: 7%;
+  top: 8%;
   bottom: 0;
 }
 
@@ -280,9 +280,11 @@ margin-top: 5px;
 a.refresh {
   background: #FFF;
   color: gray;
-  font: bold 11px "Helvetica";
-  padding: 25px;
+  font-family: Open Sans, serif; font-weight: 300;
+  font-size:  20px;
+  padding: 15px;
   text-decoration: none;
+  padding-right:4px;
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -298,21 +300,27 @@ a.refresh {
   transition: all 0.3s ease;
 }
 
+
+
 a.refresh:after {
-  background: gray;
+
+  background-color: #00f;
+  background-color:  rgba(0, 0, 0, 0.17);
+
   color: #FFF;
-  content: ">";
+  content: "↺";
   display: inline-block;
-  font: bold 11px "Georgia";
-  height: 25px;
-  line-height: 25px;
-  margin-left: 10px;
+  font:  20px "Arial";
+  height: 30px;
+  line-height: 30px;
+  margin: 0  10px;
+
   text-align: center;
-  width: 25px;
-  
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  width: 30px;  
+  -o-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 
 a.refresh:hover {
@@ -408,8 +416,6 @@ a.refresh:hover {
     display: none;
 
 }
-
-
 
 
 

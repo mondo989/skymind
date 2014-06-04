@@ -239,9 +239,13 @@ p.activate {
 
 
 .dowork {
+  display: none;
+  border-radius: 10px;
   width: 99%;
   height: 99%;
-  background: red;
+  background: gray;
+  opacity: .09;
+  margin-top: -17px;
 }
 
 .prompt {
@@ -278,6 +282,7 @@ margin-top: 5px;
 
 
 a.refresh {
+  display: none;
   background: #FFF;
   color: gray;
   font-family: Open Sans, serif; font-weight: 300;
@@ -401,6 +406,8 @@ a.refresh:hover {
   .col-sm-6 > .blankdiv {
     margin-top: 10px;
     display: block;
+    max-width: 450px;
+    margin: 0 auto;
     -webkit-transition: 1s;
      -moz-transition: 1s;
       -ms-transition: 1s;
@@ -414,6 +421,7 @@ a.refresh:hover {
 
  .col-sm-6 > .blankdiv {
     display: none;
+    margin-top: 20px;
 
 }
 

@@ -1,5 +1,7 @@
 
 
+
+
 // Randomizer
 var randomNumGen = Math.floor((Math.random() * 10) + 1);
 
@@ -10,13 +12,26 @@ var randomNumGen = Math.floor((Math.random() * 10) + 1);
     }
 
 
+  $(".refresh").hide();
 
 
-//The . click to annon function 
+//  Getting the dragover to work..
 
-$( "#whole-uploader" ).on( "click", function (){
+$(document).bind('drop dragover dragstart addedfile', function () {
          $(".refresh").show("slow");
          $(".col-sm-6 > .blankdiv").show("slow");
          $(".dowork").show("slow");
-});
-      
+       });
+
+
+
+//The . click to create an anon function... 
+
+ $( "#whole-uploader" ).on( "click", function (){
+                
+                $(".col-sm-6 > .blankdiv").show("slow");
+                $(".dowork").show("slow");
+                $(".refresh").show("slow");
+       });
+
+

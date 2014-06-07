@@ -49,10 +49,6 @@ line-height: 42px;
 
 .ycontainer {
    height: auto;
-   margin-top: 5%;
-   max-height: 600px;
-   
-   overflow-y: hidden;
    position: relative;
 }
 
@@ -62,7 +58,7 @@ line-height: 42px;
    vertical-align: middle;
    width: 95%;
    margin: 0 auto;
-   margin-top: 50px;
+   margin-top: 40px;
    text-align: center;
 }
 
@@ -203,14 +199,13 @@ p.activate {
 }
 
 .ml-p {
-
   text-align: center;  
   font-size: 20px;
   z-index: -9000;
   position: absolute;
   right: 0;
   left: 0;
-  top: 47%;
+  top:54%;
   bottom: 0;
 }
 
@@ -221,13 +216,13 @@ p.activate {
   position: absolute;
   right: 0;
   left: 0;
-  top: 47%;
+  top:54%;
   bottom: 0;
 }
 
 
 .numbers {
-  font-size: 120px;
+  font-size: 130px;
   text-align: center;
   z-index: -9000;
   position: absolute;
@@ -278,7 +273,8 @@ height: auto;
 margin-top: 5px;
 }
 
-
+.dropzone.hover {
+    width: 2000px; }
 
 
 a.refresh {
@@ -340,9 +336,35 @@ a.refresh:hover {
 }
 
 
+ .header--fixed {
+    z-index: 10;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    background-color: red;
+    margin-top: 200px;
+    width: 100%;
+    height: 200px;
+}
 
 
+.headroom {
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
 
+.headroom--pinned {
+    display: block;
+}
+.headroom--unpinned {
+    display: none;
+}
 
 
 /* ===============================================================================================================
@@ -358,6 +380,12 @@ a.refresh:hover {
   .up-pic {
     display: none;
   }
+
+  
+.atop {
+  display:  none;
+}
+
 
 .meow {
   max-width: 80%;
@@ -388,6 +416,8 @@ a.refresh:hover {
   .col-sm-6 > .blankdiv {
     display: none;
   }
+
+
 
 
 }
@@ -424,6 +454,9 @@ a.refresh:hover {
     margin-top: 20px;
 
 }
+
+}
+
 
 
 
